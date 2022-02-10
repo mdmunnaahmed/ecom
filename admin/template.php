@@ -6,7 +6,7 @@ $adminId = $_SESSION['admin_email'];
 if (!$adminId) {
     header("location: index.php");
 }
-if(isset($_GET['adminLogout'])) {
+if (isset($_GET['adminLogout'])) {
     $obj_adminBack = new adminBack();
     $obj_adminBack->adminLogout();
 }
@@ -48,25 +48,27 @@ if(isset($_GET['adminLogout'])) {
 
                                     <div class="page-body">
 
-                                            <?php
+                                        <?php
 
-                                            if ($views) {
-                                                if ("dashboard" == $views) {
-                                                    include("views/dashboard-view.php");
-                                                } else if ("add-category" == $views) {
-                                                    include("views/add-category-view.php");
-                                                } else if ("add-product" == $views) {
-                                                    include("views/add-product-view.php");
-                                                } else if ("manage-category" == $views) {
-                                                    include("views/manage-category-view.php");
-                                                } else if ("manage-product" == $views) {
-                                                    include("views/manage-product-view.php");
-                                                } else if ("manage-users" == $views) {
-                                                    include("views/manage-users-view.php");
-                                                }
+                                        if ($views) {
+                                            if ("dashboard" == $views) {
+                                                include("views/dashboard-view.php");
+                                            } else if ("add-category" == $views) {
+                                                include("views/add-category-view.php");
+                                            } else if ("add-product" == $views) {
+                                                include("views/add-product-view.php");
+                                            } else if ("manage-category" == $views) {
+                                                include("views/manage-category-view.php");
+                                            } else if ("manage-product" == $views) {
+                                                include("views/manage-product-view.php");
+                                            } else if ("manage-users" == $views) {
+                                                include("views/manage-users-view.php");
+                                            } else if ("edit-category" == $views) {
+                                                include("views/edit-category-view.php");
                                             }
+                                        }
 
-                                            ?>
+                                        ?>
 
                                     </div>
                                 </div>
