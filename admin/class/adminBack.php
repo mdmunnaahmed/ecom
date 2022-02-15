@@ -159,11 +159,21 @@ class adminBack
         }
     }
 
-    function displayProduct() {
+    function displayProduct()
+    {
         $query = "SELECT * FROM product_info_ctg";
-        if(mysqli_query($this->conn, $query)) {
+        if (mysqli_query($this->conn, $query)) {
             $product = mysqli_query($this->conn, $query);
             return $product;
+        }
+    }
+
+    function deleteProduct($data)
+    {
+        $query = "DELETE FROM products WHERE product_id = $data";
+        if (mysqli_query($this->conn, $query)) {
+            $msg = "Product has been successfully deleted";
+            return $msg;
         }
     }
 }

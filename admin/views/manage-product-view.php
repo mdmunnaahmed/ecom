@@ -2,18 +2,12 @@
 $obj_adminBack = new adminBack();
 $product_result = $obj_adminBack->displayProduct();
 
-// if (isset($_GET['status'])) {
-//     $get_id = $_GET['id'];
-//     if ($_GET['status'] == 'publish') {
-//         $msg = $obj_adminBack->publishProduct($get_id);
-//     } else if ($_GET['status'] == 'unpublish') {
-//         $msg = $obj_adminBack->unpublishProduct($get_id);
-//     } else if ($_GET['status'] == 'delete') {
-//         $msg = $obj_adminBack->deletepublishProduct($get_id);
-//     } else if ($_GET['status'] == 'edit') {
-//         $msg = $obj_adminBack->editpublishProduct($get_id);
-//     }
-// }
+if (isset($_GET['prostatus'])) {
+    $pro_id = $_GET['id'];
+    if ($_GET['prostatus'] == 'delete') {
+        $msg = $obj_adminBack->deleteProduct($pro_id);
+    }
+}
 ?>
 
 
@@ -33,6 +27,7 @@ $product_result = $obj_adminBack->displayProduct();
             <th>Description</th>
             <th>Image</th>
             <th>Categroy</th>
+            <th>Status</th>
             <th>Action</th>
         </tr>
     </thead>
@@ -49,10 +44,17 @@ $product_result = $obj_adminBack->displayProduct();
                 <td><?php echo $ctg['product_des'] ?></td>
                 <td><img src="upload/<?php echo $ctg['product_img'] ?>" alt=""></td>
                 <td><?php echo $ctg['ctg_name'] ?></td>
+                <td><?php
+                    if ($ctg['product_status'] == 1) {
+                        echo "Published";
+                    } else {
+                        echo "Unpublished";
+                    }
+                    ?></td>
 
                 <td>
-                    <a class="btn-sm btn btn-info" href="edit-category.php?status=edit&&id=<?php echo $ctg['product_id'] ?>">Edit</a>
-                    <a class="btn-sm btn btn-danger" href="?status=delete&&id=<?php echo $ctg['product_id'] ?>">Delete</a>
+                    <a class="btn-sm btn btn-info" href="edit-product.php?prostatus=edit&&id=<?php echo $ctg['product_id'] ?>">Edit</a>
+                    <a class="btn-sm btn btn-danger" href="?prostatus=delete&&id=<?php echo $ctg['product_id'] ?>">Delete</a>
                 </td>
             </tr>
 
