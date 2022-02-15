@@ -121,4 +121,49 @@ class adminBack
             return $msg;
         }
     }
+
+    function addProduct($recieve_data)
+    {
+        $product_name = $recieve_data['product_name'];
+        $product_price = $recieve_data['product_price'];
+        $product_des = $recieve_data['product_des'];
+        $product_ctg = $recieve_data['product_ctg'];
+
+        $product_img_name = $_FILES['product_img']['name'];
+        $product_img_size = $_FILES['product_img']['size'];
+        $product_img_tmp_name = $_FILES['product_img']['tmp_name'];
+        $product_ext = pathinfo($product_img_name, PATHINFO_EXTENSION);
+
+        $product_status = $recieve_data['product_status'];
+
+        if ($product_ext == 'png' or $product_ext == 'jpg' or $product_ext == 'jpeg') {
+            if ($product_img_size <= 20097152) {
+
+                $query = "INSERT INTO products(product_name, product_price, product_des, product_ctg, product_img ,product_status) VALUE ('$product_name',  $product_price, '$product_des', $product_ctg, '$product_img_name', $product_status)";
+
+                if (mysqli_query($this->conn, $query)) {
+                    move_uploaded_file($product_img_tmp_name, 'upload/' . $product_img_name);
+                    $msg = "Product Added Successfully";
+                    return $msg;
+                } else {
+                    $msg = "Faild to add Product";
+                    return $msg;
+                }
+            } else {
+                $msg = "your file size should be less than 2Mib";
+                return $msg;
+            }
+        } else {
+            $msg = "Your file format not supported";
+            return $msg;
+        }
+    }
+
+    function displayProduct() {
+        $query = "SELECT * FROM product_info_ctg";
+        if(mysqli_query($this->conn, $query)) {
+            $product = mysqli_query($this->conn, $query);
+            return $product;
+        }
+    }
 }
