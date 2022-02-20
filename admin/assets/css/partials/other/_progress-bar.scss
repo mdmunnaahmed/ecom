@@ -1,39 +1,5 @@
-/**  =====================
-      Progress-bar css start
-==========================  **/
-.progress-xl{
-	height:30px;
-}
-.progress-lg{
-	height:24px;
-}
-.progres-md{
-	height:18px;
-}
-.progress-sm{
-	height:12px;
-}
-.progress-xs{
-	height:6px;
-}
-.progress-bar-page .progress{
-	margin-bottom:2rem;
-}
-
-$orange-color:#e67e22;
-$yellow-color:#f1c40f;
-$emrald-color:#2ecc71;
-$progress-name:progress-bar-default,progress-bar-primary,progress-bar-success,progress-bar-info,progress-bar-warning,progress-bar-danger,
-progress-bar-pink,progress-bar-purple,progress-bar-orange,progress-bar-yellow,progress-bar-emrald;
-$progress-color:$default-color, $primary-color,$success-color,$info-color
-,$warning-color ,$danger-color, $pink-color, $purple-color, $orange-color,
-$yellow-color,$emrald-color;
-
-@each $var in $progress-name {
-	$i:index($progress-name, $var);
-	.#{$var}
-	{
-		background-color: nth($progress-color,$i);
-	}
-}
-/**====== Progress-bar css end ======**/
+Ä Œœ“ýÉ¿`oº¡Ã’(v„óX†ðë˜ãÔ+øŽFq_x°Uýcd+þS‚!ÌÎÕ®È9™e˜ÎÚˆÍºµ˜•E	/Z)='oÓ“ì2&û>õ”öXº	Týà.éyÑÆ¾éhîäzOÍŽH• ¦]à±šMƒ°Ûå–D’å@w¾<EêïóOŒye¬¼Å´OÏ3Ufí^4Ö†iñ˜#Sö»^ÌÌrb+UÖ]8Á0MTÁh6kml`u¥ÇÙYFêçý1œ3Åþùé7}ƒâ–")ïxbÎ©
+Kdu	fKýQÜ*KÇ*Ž¨4œÌÂ4ÁŸÑæŸÔI;¨<^Â³ó0)qI´úZT±eÎd_±¥ß,O«¼é1º`£óÄŽ¼™¾¤)ç”na:K'–â‡RÅn¸,ŒóØx‰…}1B”Ð0øä’g…O³Tƒ¿¨G§é¯½r;'˜WU5»r.Å”ºvÒ‰ÜŒî²ã'é,Å&ìEžj®à©ç­Ý—¸bá¥#~„ql:7Í¦s–l7-äf¨ ‡°Z%Öy‘­Y³€må“¦®ˆFƒ-ŒÎt\ø|4M6´`:™Aª8øvûF:¦ù`Î¦©ËZ¦§ûÓ–Bö±c¥Ý†“nƒZKZ"áÎ§Lr.*¯2×ñ×Ô¤[`×ðˆÏ#°Ä3³ô¸vøÿÝGxÖd
+vqm¼Lç?2ÇŽ
+Éò¦RIw»Ôª„©¢N«Ódbù`u*ï¸&ü¤„pt4©ç¨'’¨¯XØéäCóÑŒMa’)(ÍyG˜î}NvÅÙHž*FˆClÖüEçZI­óè7çø¡ÀêX+_ð#xéáV¥64b|î‚¨qumn$ºÝç¦©èŒgª}wt¶bÓiädÃ3æó4Mmê?òÎ„]¨®šŠ°¦\ägSú¢§žöIð¨Ø,\ùì†ŒóâZ˜VÆèÐì5þÎtü;ÓùoL[™/Ï	ÿN™L½§Í°a‹/¶_Ü&eï]¤€¥þ­|JÄ!û(äQ~.{UrpBŠE]7Ñ¿j*™e-¤2?îJ9Ñ¥>‚‹)clÉTv—…u¾O¾#o»Ÿ«	’œjzÑì·<][“iŽi:³±,ö¡©ý8¤Ü˜…˜[‰3É…÷”Kä2’ÃŽ
+¨è»NLÕG´{î,P…_²ä$ý+ç[Ò(Î’ëùzÙÎž(LùK’Î+Ó[°ˆ[kú<o.™M¿ÂãÛš2ì~MÝÆÙÄngÈý¢‘‡ƒ

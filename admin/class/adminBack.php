@@ -176,4 +176,14 @@ class adminBack
             return $msg;
         }
     }
+
+    function getEditProduct($id)
+    {
+        $query = "SELECT * FROM category WHERE id == $id";
+        if (mysqli_query($this->conn, $query)) {
+            $product_info = mysqli_query($this->conn, $query);
+            $product_data = mysqli_fetch_assoc($product_info);
+            return $product_data;
+        }
+    }
 }

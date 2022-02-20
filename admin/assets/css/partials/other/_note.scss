@@ -1,57 +1,4 @@
-/**  =====================
-      Note css start
-==========================  **/
-.note-card {
-    padding-top: 0;
-    padding-bottom: 0;
-    .note-box-aside {
-        border-right: 1px solid #ddd;
-        .row {
-            padding: 20px 0;
-            display: flex;
-            align-items: center;
-        }
-    }
-    .Note-header {
-        padding: 20px 0;
-    }
-    .note-write {
-        position: relative;
-        &:before {
-            content: '';
-            position: absolute;
-            width: 0px;
-            top: 0;
-            left: 32px;
-            bottom: 0;
-            border-left: 1px solid $primary-color;;
-        }
-        &:after {
-            content: '';
-            position: absolute;
-            width: 0px;
-            top: 0;
-            left: 34px;
-            bottom: 0;
-            border-left: 1px solid $primary-color;
-        }
-
-        background:-webkit-linear-gradient(top, lighten($primary-color,15%) 0%, lighten($primary-color,30%) 5%) 0 0;
-        background-size:100% 35px;
-    }
-    #Note-pad {
-        border: none;
-        resize: none;
-        background: transparent;
-        padding:0px 20px 0 50px;
-        line-height: 35px;
-    }
-    .Note-created__on {
-        display: block;
-    }
-}
-.summernote-page .modal-footer{
-   margin:0 auto;
-}
-
-/**====== Note css end ======**/
+o{8u¾(P¡Ï—+múØYTÉK¦È•ôºÇ¤ßs348ÿcpa|ÃvÃëñ¬'…à„ßùÄ`êËêÒû/ç¿ê	=OfÓ6ãù£fì•ž¬>'Áœ.ý™ š²}î,/Õ×ðE
+›‡Œ3Qy4¤0sSóœ°i2Šº^.E.&‚i'Å"U\1xñynnÞ\ZZ„áìgù«i)v;ÏéÔCý~®ß|ñ‚RQË‰Nƒç^ýÔr,æ
+¾öÞýªP×>ÕÚ•¢Úi¾–u»Å¹»¨­×x—§â×.WÆs4ãz´mV{×ÍÝRîÂoÞ//ŸŠöSÇÏŒØ,>»~\²\w6z¢®'U¢Ù!^ê¦®é¢~ó£Œ¯þôˆ{´ôÊýÑÁBý_™ßÔKžÚhë«+s+ôÊ§]qßæ8Êßyçgpó~åƒˆæ†¹µ>íáWiÝBæœ¤˜¦ô^¼•	æ<…/ú6‹k	ªT¿yÎÿZª`“úQÑ¥`C½TÀ®éhÖÃÉádæ’ü¤Éñú²×swf]qÔÅ"•gÎÃ‰Õ±Ü©_˜â÷Õ´cµ+EM5)U<©§#’¢3i6Ãƒ?.´†=çÎÚÌO]Jýi•zMÛ¿wh!Úù!í|ÄBDS•G—çé0w‹\bÖz¯m0=_m~¯uÉ³Ëu™–û7×O¯öÎçZNÏ=»¾ÐT¡SÅ¡{:D+*E³þU1˜ö_þWù’,\Ô,þ«÷7‡èˆ”÷rÍÒ³‘¬«ÃÜëÔÃ¬“f÷A§–¦ã‰Rý_V2ç½W‚ÝÛî;Æ?=_Í8=“R——Rëy÷è¦«¶ÐÝÔ`«ŸïÀ?©Ÿ¾ú4<dO$¼ÞÂ×´þ4Âm$Ïà¨àÙåÆÁÇnáý÷‹áïQ\BÃ—eÃ½¸»$eœåe\ÔºåÍU>$NgË›>^ÿúžL.ê"[.•öq®éã‚åÇ%¦Wg;ý-§H{'s-×Wi×I×kO½ÎFK¯ŽJE“&§éùêgW-£VùZ¬ó^'~LHÌ¯O,Lxê¹=l?Ÿç|yøÓ5üÁë«a¡Þ¡A.áQUa®Då0Ûè,2üÁp7gI™hI¹Ã,úç™‚33™>e¾ëð^ˆ4„õÙØ½æ"#ó8(®.Ö!Lò$Ñ¥M­.Å?×0ÿÙ…°£Û;¢WÍÁÜ:Ü¥VzjÆÏyŠï¤Ê	ŸÊÛú\jn#¿ôŒë‚f£9iÿª¥UÑ÷Êbsž8z§©Sõk»†Ä&­’ø•Ïz'”«Ÿ’ÐJš~æºÕ[nM¹u3£æÇ1™ÃÏ¿ž9­V©˜êâ -Ô!¹¨É¬K)çPr/O.ÆØýfÍ&hbB–HúÜ£6±Y1YUÎ_slfRèwlÜÖµjÙkÀt,üƒ$‰F£5¿·æ9R£ŸFuú»…ù
+sB^Ï‡•š…KÉ_@<î•ãßêòTóFÇ†M¶¿'4é°õë$ôHirUo¢#E öhû¥Ö¤V;ôtÏeÒ7/]Ÿÿ¼¬î£•µu×kšýfu˜yÍ;×òekÔ­)©¦ÓQàÔ¡ŒX»Ø;ô¡­ Ã”Û¸i…ÅÎÚzT—v¬D¯7âYeÿT×ó”d©Á›‰0¿–«Ö0.ÝÁò$¶zn{.¶úÊ¸ÔÏnÓp»!l‚HaŒ<ù´ÓßˆíaV=›Û"!¨Ö¼j+l£¯¸D`¥Ë|Áï ²Ï²_Ã¨]lˆï>Ú7<F¨jÇñÐ}¦:¬iLµ%>eNµ¼Ü	ìMRfa2jÍ¥÷Ij~<¬ž½–édås¥††j=ãôKƒX–W-+Ó-,¯.
